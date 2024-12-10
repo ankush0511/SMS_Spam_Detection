@@ -1,8 +1,6 @@
 build:
-  dockerfile: |
-    FROM python:3.9
-    WORKDIR /app
-    COPY . .
-    RUN pip install --upgrade pip && pip install -r requirements.txt
-start:
-  command: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+dockerfile: |
+  FROM python:3.9  # Adjust to a suitable version if needed
+  WORKDIR /app
+  COPY . .
+  RUN pip install --upgrade pip && pip install -r requirements.txt
