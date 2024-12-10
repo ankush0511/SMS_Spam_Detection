@@ -1,4 +1,5 @@
 import streamlit as st
+import gunicorn
 import nltk
 try:
     nltk.data.find('tokenizers/punkt')
