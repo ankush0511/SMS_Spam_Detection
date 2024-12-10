@@ -1,6 +1,7 @@
 ﻿pandas
 numpy
-streamlit
 nltk
 pickle
-python==3.7
+python>=3.7,<3.11
+streamlit
+scikit-learn
