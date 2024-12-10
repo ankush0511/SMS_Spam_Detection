@@ -1,4 +1,14 @@
 import streamlit as st
+import nltk
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 import pickle
 import string
 from scipy.sparse.csr import csr_matrix
